@@ -62,16 +62,16 @@
         </p>
     </div>
     
-      <!--
+     
     <div class="section">
-        <h3>2D Generative Models don't Understand 3D</h3>
+        <h3>What is this the best strategyof using the prior in a 3D learning task?</h3>
         <hr>
-        <img src="img/teaser.gif" style="width:50%; display:block; margin-right:auto; margin-left:auto; margin-top:-10px;">
+        <img src="teaser.png" style="width:50%; display:block; margin-right:auto; margin-left:auto; margin-top:-10px;">
         <p>
-            Deep Generative Models today allow us to perform highly-realistic image synthesis.
-            While each generated image is of high quality, a major challenge is to generate a series of coherent views of
-            the same scene. This requires the network to have a latent space representation that fundamentally understands the 3D layout
-            of the scene; e.g., how would the same chair look from a different viewpoint?
+                The shape prior learned from the limited training data cannot capture the full landscape of the real data distribution. 
+    Common practice that uses a fixed pre-trained generator is constrained within the prior (path a) and thus fails to model the unseen data lying outside the prior, even with latent code optimization at test time. Optimizing a randomly initialized generator, on the other hand, is prone to be trapped in a local minimum due to the complex energy landscape (path b). 
+    Whereas the pre-train prior could provide a good initialization in a forward pass, we propose to further optimize the parameters of the prior and the latent code according to the task-specific constraints at test time. We show in this work that the proposed framework can effectively break the barriers of pre-trained prior and generalize to the unseen data that is out of the prior domain (path c). 
+    Hence, our approach can generate results (ending point of path c) closest to the ground truth (star point on the real data manifold) compared to the other learning methods (path a and b).
         </p>
         <p>
             Unfortunately, this is challenging for existing models that are based on a series of 2D convolution kernels.
@@ -80,7 +80,7 @@
             Pix2Pix trained on images of the cube above.
         </p>
     </div>
-
+ <!--
     <div class="section">
         <h3>DeepVoxels: A 3D-structured Neural Scene Representation</h3>
         <hr>
@@ -97,9 +97,10 @@
     <div class="section">
         <h3>Results on Real Captures with Nearest Neighbor Comparison</h3>
         <hr>
-        <img src="img/dyck_stacked.mp4.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
-        <img src="img/fountain_stacked.mp4.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
-        <img src="img/globe_stacked.mp4.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
+        <img src="img/1-ours.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
+        <img src="img/1-gt.mp4.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
+        <img src="img/gt.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
+         <img src="img/lamp1.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
     </div>
 
     <div class="section">
@@ -107,7 +108,7 @@
         <hr>
         <iframe width="884" height="497" src="https://youtu.be/5Plwj6lTnoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!--        <iframe width="884" height="497" src="https://www.youtube.com/embed/HM_WsZhoGXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-    </div>
+    </div> 
 
     <div class="section">
         <h3>Paper</h3>
@@ -115,7 +116,7 @@
         <div>
             <div class="list-group">
                 <a href="https://arxiv.org/abs/2012.07241" class="list-group-item">
-                    <img src="img/paper_thumbnails.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+                    <img src="paper_thumbnails.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
                 </a>
             </div>
         </div>
