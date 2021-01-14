@@ -19,7 +19,7 @@
     <!-- Custom styles for this template -->
     <link href="offcanvas.css" rel="stylesheet">
 
-    <link rel="icon" href="img/favicon.gif" type="image/gif" >
+    <link rel="icon" href="img/1-ours.gif" type="image/gif" >
   </head>
 
   <body>
@@ -66,18 +66,17 @@
     <div class="section">
         <h3>What is this the best strategyof using the prior in a 3D learning task?</h3>
         <hr>
-        <img src="teaser.png" style="width:50%; display:block; margin-right:auto; margin-left:auto; margin-top:-10px;">
+        <img src="teaser.PNG" style="width:50%; display:block; margin-right:auto; margin-left:auto; margin-top:-10px;">
         <p>
                 The shape prior learned from the limited training data cannot capture the full landscape of the real data distribution. 
-    Common practice that uses a fixed pre-trained generator is constrained within the prior (path a) and thus fails to model the unseen data lying outside the prior, even with latent code optimization at test time. Optimizing a randomly initialized generator, on the other hand, is prone to be trapped in a local minimum due to the complex energy landscape (path b). 
-    Whereas the pre-train prior could provide a good initialization in a forward pass, we propose to further optimize the parameters of the prior and the latent code according to the task-specific constraints at test time. We show in this work that the proposed framework can effectively break the barriers of pre-trained prior and generalize to the unseen data that is out of the prior domain (path c). 
-    Hence, our approach can generate results (ending point of path c) closest to the ground truth (star point on the real data manifold) compared to the other learning methods (path a and b).
-        </p>
+                Common practice that uses a fixed pre-trained generator is constrained within the prior (path a) and thus fails to model 
+          the unseen data lying outside the prior, even with latent code optimization at test time. 
+          Optimizing a randomly initialized generator, on the other hand, is prone to be trapped in a local minimum due to the complex energy landscape (path b). 
+          </p>
         <p>
-            Unfortunately, this is challenging for existing models that are based on a series of 2D convolution kernels.
-            Instead of parameterizing 3D transformations, they will explain training data in
-            a higher-dimensional feature space, leading to poor generalization to novel views at test time - such as the output of
-            Pix2Pix trained on images of the cube above.
+           Whereas the pre-train prior could provide a good initialization in a forward pass, we propose to further optimize the parameters of the prior and the latent code according to the task-specific constraints at test time. We show in this work that the proposed framework can effectively break the barriers of pre-trained prior and generalize to the unseen data that is out of the prior domain (path c). 
+    Hence, our approach can generate results (ending point of path c) closest to the ground truth (star point on the real data manifold) compared to the other learning methods (path a and b).
+    
         </p>
     </div>
  <!--
@@ -98,7 +97,7 @@
         <h3>Results on Real Captures with Nearest Neighbor Comparison</h3>
         <hr>
         <img src="img/1-ours.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
-        <img src="img/1-gt.mp4.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
+        <img src="img/1-gt.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
         <img src="img/gt.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
          <img src="img/lamp1.gif" style="width:32%; margin-right:auto; margin-left:auto; margin-top:-10px;">
     </div>
@@ -106,7 +105,7 @@
     <div class="section">
         <h3>Video</h3>
         <hr>
-        <iframe width="884" height="497" src="https://youtu.be/embed/5Plwj6lTnoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="984" height="497" src="https://youtu.be/embed/5Plwj6lTnoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!--        <iframe width="884" height="497" src="https://www.youtube.com/embed/HM_WsZhoGXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
     </div> 
 
